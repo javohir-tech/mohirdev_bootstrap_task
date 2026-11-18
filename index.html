@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard sale | DashboardKit</title>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to content</a>
+        <!-- Telefon menyusi CSS orqali ochiladi. -->
+        <input type="checkbox" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="DashboardKit" width="170" height="30">
+            </a>
+            <nav aria-label="Main navigation">
+                <p class="menu-caption">Navigation</p>
+                <a class="sidebar-link active" href="index.html" aria-current="page">
+                    <img class="nav-icon" src="images/icons/home.svg" alt="">
+                    Dashboard
+                </a>
+                <p class="menu-caption">
+                    Elements
+                    <small>UI Components</small>
+                </p>
+                <details class="sidebar-group">
+                    <summary>
+                        <img class="nav-icon" src="images/icons/briefcase.svg" alt="">
+                        Basic
+                    </summary>
+                    <a class="sidebar-link" href="buttons.html">
+                        <img class="nav-icon" src="images/icons/arrow.svg" alt="">
+                        Buttons
+                    </a>
+                </details>
+                <a class="sidebar-link" href="buttons.html#icons">
+                    <img class="nav-icon" src="images/icons/icons.svg" alt="">
+                    Icons
+                </a>
+                <p class="menu-caption">Forms</p>
+                <details class="sidebar-group">
+                    <summary>
+                        <img class="nav-icon" src="images/icons/edit.svg" alt="">
+                        Forms Elements
+                    </summary>
+                    <a class="sidebar-link" href="form-elements.html">
+                        <img class="nav-icon" src="images/icons/arrow.svg" alt="">
+                        Form Basic
+                    </a>
+                </details>
+                <p class="menu-caption">Table</p>
+                <a class="sidebar-link" href="tables.html">
+                    <img class="nav-icon" src="images/icons/table.svg" alt="">
+                    Bootstrap table
+                </a>
+                <p class="menu-caption">
+                    Chart &amp; Maps
+                    <small>Tones Of Readymade Charts</small>
+                </p>
+                <a class="sidebar-link" href="index.html#sales-report">
+                    <img class="nav-icon" src="images/icons/chart.svg" alt="">
+                    Chart
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <span class="version-dot"></span>
+                Bootstrap 5
+            </div>
+        </aside>
+        <label class="menu-overlay" for="menu-toggle" aria-label="Close navigation"></label>
+        <header class="topbar">
+            <label class="menu-button" for="menu-toggle">
+                <span aria-hidden="true">☰</span>
+                <span class="visually-hidden">Menu</span>
+            </label>
+            <details class="level-menu">
+                <summary>
+                    Level
+                    <span aria-hidden="true">⌄</span>
+                </summary>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="buttons.html">Buttons</a>
+                    <a class="dropdown-item" href="form-elements.html">Form elements</a>
+                    <a class="dropdown-item" href="tables.html">Bootstrap table</a>
+                </div>
+            </details>
+            <details class="quick-nav level-menu">
+                <summary aria-label="Find a page">
+                    <img src="images/icons/search.svg" alt="">
+                </summary>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="buttons.html">Buttons</a>
+                    <a class="dropdown-item" href="form-elements.html">Form elements</a>
+                    <a class="dropdown-item" href="tables.html">Bootstrap table</a>
+                </div>
+            </details>
+            <div class="user-profile">
+                <img src="images/avatar.jpg" alt="" width="40" height="40">
+                <div>
+                    <strong>Joseph William</strong>
+                    <span>Administrator</span>
+                </div>
+            </div>
+        </header>
+        <main class="main-content dashboard-page" id="main-content">
+            <div class="page-heading">
+                <h1>Dashboard sale</h1>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Dashboard sale</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="page-body">
+                <!-- Bootstrap row va col klasslari sahifani moslashuvchan qiladi. -->
+                <div class="row g-4">
+                    <!-- Asosiy statistika -->
+                    <div class="col-xl-6">
+                        <section class="card statistics-card" aria-label="Key statistics">
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <img src="images/icons/customers.svg" alt="">
+                                    <div>
+                                        <h2>1000</h2>
+                                        <p>Customers</p>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <img src="images/icons/revenue.svg" alt="">
+                                    <div>
+                                        <h2>$1252</h2>
+                                        <p>Revenue</p>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <img src="images/icons/growth.svg" alt="">
+                                    <div>
+                                        <h2>600</h2>
+                                        <p>Growth</p>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <img src="images/icons/returns.svg" alt="">
+                                    <div>
+                                        <h2>3550</h2>
+                                        <p>Returns</p>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <img src="images/icons/downloads.svg" alt="">
+                                    <div>
+                                        <h2>3550</h2>
+                                        <p>Downloads</p>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <img src="images/icons/order.svg" alt="">
+                                    <div>
+                                        <h2>100%</h2>
+                                        <p>Order</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="row g-4 mt-0">
+                            <div class="col-md-6">
+                                <section class="card conversion-card">
+                                    <div class="card-body pb-0">
+                                        <h2 class="metric-value">53.94%</h2>
+                                        <p class="metric-label">Conversion Rate</p>
+                                        <p class="metric-description">Number of conversions divided by the total visitors.</p>
+                                    </div>
+                                    <img class="sparkline" src="images/charts/conversion.svg" alt="Conversion trend rising to 55, then returning to zero.">
+                                    <div class="metric-footer purple-footer">
+                                        <div>
+                                            <strong>10</strong>
+                                            <span>2018</span>
+                                        </div>
+                                        <div>
+                                            <strong>15</strong>
+                                            <span>2017</span>
+                                        </div>
+                                        <div>
+                                            <strong>13</strong>
+                                            <span>2016</span>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-md-6">
+                                <section class="card order-card">
+                                    <div class="card-body pb-0">
+                                        <h2 class="metric-value">1432</h2>
+                                        <p class="metric-label">Order delivered</p>
+                                        <p class="metric-description">Total number of order delivered in this month.</p>
+                                    </div>
+                                    <div class="metric-footer">
+                                        <div>
+                                            <strong>130</strong>
+                                            <span>May</span>
+                                        </div>
+                                        <div>
+                                            <strong>251</strong>
+                                            <span>June</span>
+                                        </div>
+                                        <div>
+                                            <strong>235</strong>
+                                            <span>July</span>
+                                        </div>
+                                    </div>
+                                    <img class="sparkline order-sparkline" src="images/charts/orders.svg" alt="Order trend shown as purple bars.">
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Oylik savdo hisoboti -->
+                    <div class="col-xl-6">
+                        <section class="card sales-card" id="sales-report">
+                            <div class="card-header">
+                                <h2>Department wise monthly sales report</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="sales-totals">
+                                    <div>
+                                        <h3>$21,356.46</h3>
+                                        <p>Total Sales</p>
+                                    </div>
+                                    <div>
+                                        <h3>$1935.6</h3>
+                                        <p>Average</p>
+                                    </div>
+                                </div>
+                                <figure class="mb-0">
+                                    <img class="sales-chart" src="images/charts/monthly-sales.svg" alt="January to November 2003 sales. Highest sales: 44 in September. Highest average: 64 in July.">
+                                </figure>
+                                <details class="chart-data">
+                                    <summary>View chart data</summary>
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <caption class="visually-hidden">Monthly sales report data</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Month</th>
+                                                    <th scope="col">Total Sales</th>
+                                                    <th scope="col">Average</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Jan 2003</th>
+                                                    <td>23</td>
+                                                    <td>30</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Feb 2003</th>
+                                                    <td>11</td>
+                                                    <td>25</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Mar 2003</th>
+                                                    <td>22</td>
+                                                    <td>36</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Apr 2003</th>
+                                                    <td>27</td>
+                                                    <td>30</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">May 2003</th>
+                                                    <td>13</td>
+                                                    <td>45</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Jun 2003</th>
+                                                    <td>22</td>
+                                                    <td>35</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Jul 2003</th>
+                                                    <td>37</td>
+                                                    <td>64</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Aug 2003</th>
+                                                    <td>21</td>
+                                                    <td>52</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Sep 2003</th>
+                                                    <td>44</td>
+                                                    <td>59</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Oct 2003</th>
+                                                    <td>22</td>
+                                                    <td>36</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Nov 2003</th>
+                                                    <td>30</td>
+                                                    <td>39</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </details>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Mijozlar va mahsulotlar -->
+                    <div class="col-xl-6">
+                        <section class="card satisfaction-card mb-4">
+                            <div class="card-body">
+                                <h2>Customer Satisfaction</h2>
+                                <p>It takes continuous effort to maintain high customer satisfaction levels Internal and external.</p>
+                                <img class="satisfaction-chart" src="images/charts/satisfaction.svg" alt="Customer satisfaction: extremely satisfied 35.5%, satisfied 26.9%, poor 21.5%, very poor 16.1%.">
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div class="card-header">
+                                <h2>New Products</h2>
+                            </div>
+                            <div class="product-list table-responsive" tabindex="0" role="region" aria-label="New products">
+                                <table class="table table-hover mb-0">
+                                    <caption class="visually-hidden">New product examples</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Product Name</th>
+                                            <th scope="col">Image</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>HeadPhone</td>
+                                            <td>
+                                                <img class="product-image" src="images/product-1.jpg" alt="HeadPhone" width="28" height="28">
+                                            </td>
+                                            <td>
+                                                <span class="badge text-bg-warning">Pending</span>
+                                            </td>
+                                            <td>$10</td>
+                                            <td>
+                                                <a class="product-action" href="form-elements.html" aria-label="Open form example for HeadPhone">
+                                                    <img src="images/icons/edit.svg" alt="" width="17" height="17">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Iphone 6</td>
+                                            <td>
+                                                <img class="product-image" src="images/product-2.jpg" alt="Iphone 6" width="28" height="28">
+                                            </td>
+                                            <td>
+                                                <span class="badge text-bg-danger">Cancel</span>
+                                            </td>
+                                            <td>$20</td>
+                                            <td>
+                                                <a class="product-action" href="form-elements.html" aria-label="Open form example for Iphone 6">
+                                                    <img src="images/icons/edit.svg" alt="" width="17" height="17">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacket</td>
+                                            <td>
+                                                <img class="product-image" src="images/product-3.jpg" alt="Jacket" width="28" height="28">
+                                            </td>
+                                            <td>
+                                                <span class="badge text-bg-success">Success</span>
+                                            </td>
+                                            <td>$35</td>
+                                            <td>
+                                                <a class="product-action" href="form-elements.html" aria-label="Open form example for Jacket">
+                                                    <img src="images/icons/edit.svg" alt="" width="17" height="17">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sofa</td>
+                                            <td>
+                                                <img class="product-image" src="images/product-4.jpg" alt="Sofa" width="28" height="28">
+                                            </td>
+                                            <td>
+                                                <span class="badge text-bg-danger">Cancel</span>
+                                            </td>
+                                            <td>$85</td>
+                                            <td>
+                                                <a class="product-action" href="form-elements.html" aria-label="Open form example for Sofa">
+                                                    <img src="images/icons/edit.svg" alt="" width="17" height="17">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Iphone 6</td>
+                                            <td>
+                                                <img class="product-image" src="images/product-2.jpg" alt="Iphone 6" width="28" height="28">
+                                            </td>
+                                            <td>
+                                                <span class="badge text-bg-success">Success</span>
+                                            </td>
+                                            <td>$20</td>
+                                            <td>
+                                                <a class="product-action" href="form-elements.html" aria-label="Open form example for Iphone 6">
+                                                    <img src="images/icons/edit.svg" alt="" width="17" height="17">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>HeadPhone</td>
+                                            <td>
+                                                <img class="product-image" src="images/product-1.jpg" alt="HeadPhone" width="28" height="28">
+                                            </td>
+                                            <td>
+                                                <span class="badge text-bg-warning">Pending</span>
+                                            </td>
+                                            <td>$50</td>
+                                            <td>
+                                                <a class="product-action" href="form-elements.html" aria-label="Open form example for HeadPhone">
+                                                    <img src="images/icons/edit.svg" alt="" width="17" height="17">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Iphone 6</td>
+                                            <td>
+                                                <img class="product-image" src="images/product-2.jpg" alt="Iphone 6" width="28" height="28">
+                                            </td>
+                                            <td>
+                                                <span class="badge text-bg-danger">Cancel</span>
+                                            </td>
+                                            <td>$30</td>
+                                            <td>
+                                                <a class="product-action" href="form-elements.html" aria-label="Open form example for Iphone 6">
+                                                    <img src="images/icons/edit.svg" alt="" width="17" height="17">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Qisqa ko'rsatkichlar va xabarlar -->
+                    <div class="col-xl-6">
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <article class="card total-card">
+                                    <div class="card-body">
+                                        <div>
+                                            <h2>Total Profit</h2>
+                                            <p>$1,783</p>
+                                        </div>
+                                        <img src="images/icons/gift.svg" alt="">
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6">
+                                <article class="card total-card total-purple">
+                                    <div class="card-body">
+                                        <div>
+                                            <h2>Total Orders</h2>
+                                            <p>15,830</p>
+                                        </div>
+                                        <img src="images/icons/bag.svg" alt="">
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6">
+                                <article class="card total-card total-purple">
+                                    <div class="card-body">
+                                        <div>
+                                            <h2>Average Price</h2>
+                                            <p>$6,780</p>
+                                        </div>
+                                        <img src="images/icons/price.svg" alt="">
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6">
+                                <article class="card total-card">
+                                    <div class="card-body">
+                                        <div>
+                                            <h2>Product Sold</h2>
+                                            <p>6,784</p>
+                                        </div>
+                                        <img src="images/icons/tag.svg" alt="">
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <section class="card">
+                            <div class="card-header">
+                                <h2>Feeds</h2>
+                            </div>
+                            <ul class="feed-list">
+                                <li>
+                                    <span class="feed-icon feed-purple">
+                                        <img src="images/icons/bell.svg" alt="">
+                                    </span>
+                                    <span>You have 3 pending tasks.</span>
+                                    <time>Just Now</time>
+                                </li>
+                                <li>
+                                    <span class="feed-icon feed-red">
+                                        <img src="images/icons/order.svg" alt="">
+                                    </span>
+                                    <span>New order received</span>
+                                    <time>30 min ago</time>
+                                </li>
+                                <li>
+                                    <span class="feed-icon feed-green">
+                                        <img src="images/icons/file.svg" alt="">
+                                    </span>
+                                    <span>You have 3 pending tasks.</span>
+                                    <time>Just Now</time>
+                                </li>
+                                <li>
+                                    <span class="feed-icon feed-purple">
+                                        <img src="images/icons/bell.svg" alt="">
+                                    </span>
+                                    <span>You have 4 tasks Done.</span>
+                                    <time>1 hour ago</time>
+                                </li>
+                                <li>
+                                    <span class="feed-icon feed-green">
+                                        <img src="images/icons/file.svg" alt="">
+                                    </span>
+                                    <span>You have 2 pending tasks.</span>
+                                    <time>Just Now</time>
+                                </li>
+                                <li>
+                                    <span class="feed-icon feed-red">
+                                        <img src="images/icons/order.svg" alt="">
+                                    </span>
+                                    <span>New order received</span>
+                                    <time>4 hours ago</time>
+                                </li>
+                                <li>
+                                    <span class="feed-icon feed-green">
+                                        <img src="images/icons/order.svg" alt="">
+                                    </span>
+                                    <span>New order Done</span>
+                                    <time>Just Now</time>
+                                </li>
+                                <li>
+                                    <span class="feed-icon feed-green">
+                                        <img src="images/icons/file.svg" alt="">
+                                    </span>
+                                    <span>You have 5 pending tasks.</span>
+                                    <time>5 hours ago</time>
+                                </li>
+                                <li>
+                                    <span class="feed-icon feed-purple">
+                                        <img src="images/icons/bell.svg" alt="">
+                                    </span>
+                                    <span>You have 4 tasks Done.</span>
+                                    <time>2 hours ago</time>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <footer class="page-footer">DashboardKit · HTML, CSS &amp; Bootstrap practice</footer>
+            </div>
+        </main>
+    </body>
+</html>

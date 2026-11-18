@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buttons | DashboardKit</title>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to content</a>
+        <!-- Telefon menyusi CSS orqali ochiladi. -->
+        <input type="checkbox" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="DashboardKit" width="170" height="30">
+            </a>
+            <nav aria-label="Main navigation">
+                <p class="menu-caption">Navigation</p>
+                <a class="sidebar-link" href="index.html">
+                    <img class="nav-icon" src="images/icons/home.svg" alt="">
+                    Dashboard
+                </a>
+                <p class="menu-caption">
+                    Elements
+                    <small>UI Components</small>
+                </p>
+                <details class="sidebar-group" open>
+                    <summary>
+                        <img class="nav-icon" src="images/icons/briefcase.svg" alt="">
+                        Basic
+                    </summary>
+                    <a class="sidebar-link active" href="buttons.html" aria-current="page">
+                        <img class="nav-icon" src="images/icons/arrow.svg" alt="">
+                        Buttons
+                    </a>
+                </details>
+                <a class="sidebar-link" href="buttons.html#icons">
+                    <img class="nav-icon" src="images/icons/icons.svg" alt="">
+                    Icons
+                </a>
+                <p class="menu-caption">Forms</p>
+                <details class="sidebar-group">
+                    <summary>
+                        <img class="nav-icon" src="images/icons/edit.svg" alt="">
+                        Forms Elements
+                    </summary>
+                    <a class="sidebar-link" href="form-elements.html">
+                        <img class="nav-icon" src="images/icons/arrow.svg" alt="">
+                        Form Basic
+                    </a>
+                </details>
+                <p class="menu-caption">Table</p>
+                <a class="sidebar-link" href="tables.html">
+                    <img class="nav-icon" src="images/icons/table.svg" alt="">
+                    Bootstrap table
+                </a>
+                <p class="menu-caption">
+                    Chart &amp; Maps
+                    <small>Tones Of Readymade Charts</small>
+                </p>
+                <a class="sidebar-link" href="index.html#sales-report">
+                    <img class="nav-icon" src="images/icons/chart.svg" alt="">
+                    Chart
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <span class="version-dot"></span>
+                Bootstrap 5
+            </div>
+        </aside>
+        <label class="menu-overlay" for="menu-toggle" aria-label="Close navigation"></label>
+        <header class="topbar">
+            <label class="menu-button" for="menu-toggle">
+                <span aria-hidden="true">☰</span>
+                <span class="visually-hidden">Menu</span>
+            </label>
+            <details class="level-menu">
+                <summary>
+                    Level
+                    <span aria-hidden="true">⌄</span>
+                </summary>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="buttons.html">Buttons</a>
+                    <a class="dropdown-item" href="form-elements.html">Form elements</a>
+                    <a class="dropdown-item" href="tables.html">Bootstrap table</a>
+                </div>
+            </details>
+            <details class="quick-nav level-menu">
+                <summary aria-label="Find a page">
+                    <img src="images/icons/search.svg" alt="">
+                </summary>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="buttons.html">Buttons</a>
+                    <a class="dropdown-item" href="form-elements.html">Form elements</a>
+                    <a class="dropdown-item" href="tables.html">Bootstrap table</a>
+                </div>
+            </details>
+            <div class="user-profile">
+                <img src="images/avatar.jpg" alt="" width="40" height="40">
+                <div>
+                    <strong>Joseph William</strong>
+                    <span>Administrator</span>
+                </div>
+            </div>
+        </header>
+        <main class="main-content" id="main-content">
+            <div class="page-heading">
+                <h1>Buttons</h1>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">Basic</li>
+                        <li class="breadcrumb-item active" aria-current="page">Buttons</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="page-body">
+                <p class="page-intro">Use Bootstrap’s custom button styles for actions in forms, dialogs, and more, with support for multiple sizes and states.</p>
+                <!-- Bootstrap row va col klasslari sahifani moslashuvchan qiladi. -->
+                <div class="row g-4">
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Default</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <button type="button" class="btn btn-primary">Primary</button>
+                                    <button type="button" class="btn btn-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-success">Success</button>
+                                    <button type="button" class="btn btn-danger">Danger</button>
+                                    <button type="button" class="btn btn-warning">Warning</button>
+                                    <button type="button" class="btn btn-info">Info</button>
+                                    <button type="button" class="btn btn-light">Light</button>
+                                    <button type="button" class="btn btn-dark">Dark</button>
+                                    <button type="button" class="btn btn-link">Link</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Outline</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                    <button type="button" class="btn btn-outline-success">Success</button>
+                                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                                    <button type="button" class="btn btn-outline-info">Info</button>
+                                    <button type="button" class="btn btn-outline-light">Light</button>
+                                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Disabled Button</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Use the
+                                    <code>disabled</code>
+                                    attribute to disable a button.
+                                </p>
+                                <div class="button-row">
+                                    <button type="button" class="btn btn-primary" disabled>Primary</button>
+                                    <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+                                    <button type="button" class="btn btn-success" disabled>Success</button>
+                                    <button type="button" class="btn btn-danger" disabled>Danger</button>
+                                    <button type="button" class="btn btn-warning" disabled>Warning</button>
+                                    <button type="button" class="btn btn-info" disabled>Info</button>
+                                    <button type="button" class="btn btn-light" disabled>Light</button>
+                                    <button type="button" class="btn btn-dark" disabled>Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Shadow</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <button type="button" class="btn btn-primary shadow-sm">Primary</button>
+                                    <button type="button" class="btn btn-secondary shadow-sm">Secondary</button>
+                                    <button type="button" class="btn btn-success shadow-sm">Success</button>
+                                    <button type="button" class="btn btn-danger shadow-sm">Danger</button>
+                                    <button type="button" class="btn btn-warning shadow-sm">Warning</button>
+                                    <button type="button" class="btn btn-info shadow-sm">Info</button>
+                                    <button type="button" class="btn btn-light shadow-sm">Light</button>
+                                    <button type="button" class="btn btn-dark shadow-sm">Dark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Sizes [ Large ]</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Add
+                                    <code>.btn-lg</code>
+                                    for large buttons.
+                                </p>
+                                <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                                <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Sizes [ Small ]</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    Add
+                                    <code>.btn-sm</code>
+                                    for small buttons.
+                                </p>
+                                <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                                <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6" id="icons">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Button With Icon</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <button type="button" class="btn btn-primary">
+                                        <span aria-hidden="true">✦</span>
+                                        Primary
+                                    </button>
+                                    <button type="button" class="btn btn-secondary">
+                                        <span aria-hidden="true">✦</span>
+                                        Secondary
+                                    </button>
+                                    <button type="button" class="btn btn-success">
+                                        <span aria-hidden="true">✦</span>
+                                        Success
+                                    </button>
+                                    <button type="button" class="btn btn-danger">
+                                        <span aria-hidden="true">✦</span>
+                                        Danger
+                                    </button>
+                                    <button type="button" class="btn btn-warning">
+                                        <span aria-hidden="true">✦</span>
+                                        Warning
+                                    </button>
+                                    <button type="button" class="btn btn-info">
+                                        <span aria-hidden="true">✦</span>
+                                        Info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Outline Icon Buttons</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <span aria-hidden="true">✦</span>
+                                        Primary
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary">
+                                        <span aria-hidden="true">✦</span>
+                                        Secondary
+                                    </button>
+                                    <button type="button" class="btn btn-outline-success">
+                                        <span aria-hidden="true">✦</span>
+                                        Success
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger">
+                                        <span aria-hidden="true">✦</span>
+                                        Danger
+                                    </button>
+                                    <button type="button" class="btn btn-outline-warning">
+                                        <span aria-hidden="true">✦</span>
+                                        Warning
+                                    </button>
+                                    <button type="button" class="btn btn-outline-info">
+                                        <span aria-hidden="true">✦</span>
+                                        Info
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Only Icon</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <button type="button" class="btn btn-primary" aria-label="Primary icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary" aria-label="Secondary icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-success" aria-label="Success icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-danger" aria-label="Danger icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-warning" aria-label="Warning icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-info" aria-label="Info icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Outline Icon</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <button type="button" class="btn btn-outline-primary" aria-label="Primary icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-secondary" aria-label="Secondary icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-success" aria-label="Success icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger" aria-label="Danger icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-warning" aria-label="Warning icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-info" aria-label="Info icon button">
+                                        <span aria-hidden="true">✦</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Basic Dropdown Button</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-primary">
+                                            Primary
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-secondary">
+                                            Secondary
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-success">
+                                            Success
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-danger">
+                                            Danger
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-warning">
+                                            Warning
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-info">
+                                            Info
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Split Dropdown Button</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-primary">Primary</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-primary">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-secondary">Secondary</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-secondary">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-success">Success</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-success">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-danger">Danger</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-danger">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-warning">Warning</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-warning">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-info">Info</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-info">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Basic Outline Dropdown Button</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-outline-primary">
+                                            Primary
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-outline-secondary">
+                                            Secondary
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-outline-success">
+                                            Success
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-outline-danger">
+                                            Danger
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-outline-warning">
+                                            Warning
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-outline-info">
+                                            Info
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Split Outline Dropdown Button</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-outline-primary">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-outline-secondary">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-outline-success">Success</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-outline-success">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-outline-danger">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-outline-warning">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="split-dropdown">
+                                        <button type="button" class="btn btn-outline-info">Info</button>
+                                        <details class="demo-dropdown">
+                                            <summary class="btn btn-outline-info">
+                                                ⌄
+                                                <span class="visually-hidden">menu</span>
+                                            </summary>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                                <a class="dropdown-item" href="tables.html">Open tables</a>
+                                                <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                            </div>
+                                        </details>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Dark Dropdowns</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-primary">
+                                            Primary
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu dropdown-menu-dark">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-secondary">
+                                            Secondary
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu dropdown-menu-dark">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-success">
+                                            Success
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu dropdown-menu-dark">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-danger">
+                                            Danger
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu dropdown-menu-dark">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-warning">
+                                            Warning
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu dropdown-menu-dark">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-info">
+                                            Info
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu dropdown-menu-dark">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6" id="button-groups">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Basic Button Group</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="btn-group" role="group" aria-label="Button group example">
+                                    <button type="button" class="btn btn-primary">Left</button>
+                                    <button type="button" class="btn btn-primary">Middle</button>
+                                    <button type="button" class="btn btn-primary">Right</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Button Toolbar</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="btn-toolbar gap-2" role="toolbar" aria-label="Toolbar example">
+                                    <div class="btn-group" role="group" aria-label="Group 0">
+                                        <button type="button" class="btn btn-primary">1</button>
+                                        <button type="button" class="btn btn-primary">2</button>
+                                        <button type="button" class="btn btn-primary">3</button>
+                                        <button type="button" class="btn btn-primary">4</button>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Group 1">
+                                        <button type="button" class="btn btn-primary">5</button>
+                                        <button type="button" class="btn btn-primary">6</button>
+                                        <button type="button" class="btn btn-primary">7</button>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Group 2">
+                                        <button type="button" class="btn btn-primary">8</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Button Toolbar Input</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-3">
+                                    <div class="btn-group" role="group" aria-label="Button group example">
+                                        <button type="button" class="btn btn-primary">Left</button>
+                                        <button type="button" class="btn btn-primary">Middle</button>
+                                        <button type="button" class="btn btn-primary">Right</button>
+                                    </div>
+                                    <div class="input-group toolbar-input">
+                                        <span class="input-group-text">@</span>
+                                        <input class="form-control" aria-label="Toolbar username">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Button Toolbar Size</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-column align-items-start gap-3">
+                                    <div class="btn-group btn-group-lg" role="group" aria-label="Button group example">
+                                        <button type="button" class="btn btn-primary">Left</button>
+                                        <button type="button" class="btn btn-primary">Middle</button>
+                                        <button type="button" class="btn btn-primary">Right</button>
+                                    </div>
+                                    <div class="btn-group" role="group" aria-label="Button group example">
+                                        <button type="button" class="btn btn-primary">Left</button>
+                                        <button type="button" class="btn btn-primary">Middle</button>
+                                        <button type="button" class="btn btn-primary">Right</button>
+                                    </div>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Button group example">
+                                        <button type="button" class="btn btn-primary">Left</button>
+                                        <button type="button" class="btn btn-primary">Middle</button>
+                                        <button type="button" class="btn btn-primary">Right</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Nesting</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="button-row">
+                                    <div class="btn-group" role="group" aria-label="Button group example">
+                                        <button type="button" class="btn btn-primary">Left</button>
+                                        <button type="button" class="btn btn-primary">Middle</button>
+                                        <button type="button" class="btn btn-primary">Right</button>
+                                    </div>
+                                    <details class="demo-dropdown">
+                                        <summary class="btn btn-primary">
+                                            Primary
+                                            <span aria-hidden="true">⌄</span>
+                                            <span class="visually-hidden">menu</span>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="form-elements.html">Open forms</a>
+                                            <a class="dropdown-item" href="tables.html">Open tables</a>
+                                            <a class="dropdown-item" href="#button-groups">Button groups</a>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Vertical Variation</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="btn-group-vertical" role="group" aria-label="Button group example">
+                                    <button type="button" class="btn btn-primary">Left</button>
+                                    <button type="button" class="btn btn-primary">Middle</button>
+                                    <button type="button" class="btn btn-primary">Right</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Mixed Styles</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="btn-group" role="group" aria-label="Mixed colors">
+                                    <button type="button" class="btn btn-danger">Left</button>
+                                    <button type="button" class="btn btn-warning">Middle</button>
+                                    <button type="button" class="btn btn-success">Right</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Outlined Styles</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="btn-group" role="group" aria-label="Button group example">
+                                    <button type="button" class="btn btn-outline-primary">Left</button>
+                                    <button type="button" class="btn btn-outline-primary">Middle</button>
+                                    <button type="button" class="btn btn-outline-primary">Right</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Checkbox Button Groups</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="btn-group" role="group" aria-label="Checkbox button group">
+                                    <input type="checkbox" class="btn-check" id="button-check-1" name="button-check" checked>
+                                    <label class="btn btn-outline-primary" for="button-check-1">Opt 1</label>
+                                    <input type="checkbox" class="btn-check" id="button-check-2" name="button-check">
+                                    <label class="btn btn-outline-primary" for="button-check-2">Opt 2</label>
+                                    <input type="checkbox" class="btn-check" id="button-check-3" name="button-check">
+                                    <label class="btn btn-outline-primary" for="button-check-3">Opt 3</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Radio Button Groups</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="btn-group" role="group" aria-label="Radio button group">
+                                    <input type="radio" class="btn-check" id="button-radio-1" name="button-radio" checked>
+                                    <label class="btn btn-outline-primary" for="button-radio-1">Opt 1</label>
+                                    <input type="radio" class="btn-check" id="button-radio-2" name="button-radio">
+                                    <label class="btn btn-outline-primary" for="button-radio-2">Opt 2</label>
+                                    <input type="radio" class="btn-check" id="button-radio-3" name="button-radio">
+                                    <label class="btn btn-outline-primary" for="button-radio-3">Opt 3</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <footer class="page-footer">DashboardKit · HTML, CSS &amp; Bootstrap practice</footer>
+            </div>
+        </main>
+    </body>
+</html>

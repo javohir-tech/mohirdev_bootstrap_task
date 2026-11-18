@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Basic Tables | DashboardKit</title>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to content</a>
+        <!-- Telefon menyusi CSS orqali ochiladi. -->
+        <input type="checkbox" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <img src="images/logo.svg" alt="DashboardKit" width="170" height="30">
+            </a>
+            <nav aria-label="Main navigation">
+                <p class="menu-caption">Navigation</p>
+                <a class="sidebar-link" href="index.html">
+                    <img class="nav-icon" src="images/icons/home.svg" alt="">
+                    Dashboard
+                </a>
+                <p class="menu-caption">
+                    Elements
+                    <small>UI Components</small>
+                </p>
+                <details class="sidebar-group">
+                    <summary>
+                        <img class="nav-icon" src="images/icons/briefcase.svg" alt="">
+                        Basic
+                    </summary>
+                    <a class="sidebar-link" href="buttons.html">
+                        <img class="nav-icon" src="images/icons/arrow.svg" alt="">
+                        Buttons
+                    </a>
+                </details>
+                <a class="sidebar-link" href="buttons.html#icons">
+                    <img class="nav-icon" src="images/icons/icons.svg" alt="">
+                    Icons
+                </a>
+                <p class="menu-caption">Forms</p>
+                <details class="sidebar-group">
+                    <summary>
+                        <img class="nav-icon" src="images/icons/edit.svg" alt="">
+                        Forms Elements
+                    </summary>
+                    <a class="sidebar-link" href="form-elements.html">
+                        <img class="nav-icon" src="images/icons/arrow.svg" alt="">
+                        Form Basic
+                    </a>
+                </details>
+                <p class="menu-caption">Table</p>
+                <a class="sidebar-link active" href="tables.html" aria-current="page">
+                    <img class="nav-icon" src="images/icons/table.svg" alt="">
+                    Bootstrap table
+                </a>
+                <p class="menu-caption">
+                    Chart &amp; Maps
+                    <small>Tones Of Readymade Charts</small>
+                </p>
+                <a class="sidebar-link" href="index.html#sales-report">
+                    <img class="nav-icon" src="images/icons/chart.svg" alt="">
+                    Chart
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <span class="version-dot"></span>
+                Bootstrap 5
+            </div>
+        </aside>
+        <label class="menu-overlay" for="menu-toggle" aria-label="Close navigation"></label>
+        <header class="topbar">
+            <label class="menu-button" for="menu-toggle">
+                <span aria-hidden="true">☰</span>
+                <span class="visually-hidden">Menu</span>
+            </label>
+            <details class="level-menu">
+                <summary>
+                    Level
+                    <span aria-hidden="true">⌄</span>
+                </summary>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="buttons.html">Buttons</a>
+                    <a class="dropdown-item" href="form-elements.html">Form elements</a>
+                    <a class="dropdown-item" href="tables.html">Bootstrap table</a>
+                </div>
+            </details>
+            <details class="quick-nav level-menu">
+                <summary aria-label="Find a page">
+                    <img src="images/icons/search.svg" alt="">
+                </summary>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="buttons.html">Buttons</a>
+                    <a class="dropdown-item" href="form-elements.html">Form elements</a>
+                    <a class="dropdown-item" href="tables.html">Bootstrap table</a>
+                </div>
+            </details>
+            <div class="user-profile">
+                <img src="images/avatar.jpg" alt="" width="40" height="40">
+                <div>
+                    <strong>Joseph William</strong>
+                    <span>Administrator</span>
+                </div>
+            </div>
+        </header>
+        <main class="main-content" id="main-content">
+            <div class="page-heading">
+                <h1>Bootstrap Basic Tables</h1>
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">Bootstrap Table</li>
+                        <li class="breadcrumb-item active" aria-current="page">Bootstrap Basic Tables</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="page-body">
+                <!-- Bootstrap row va col klasslari sahifani moslashuvchan qiladi. -->
+                <div class="row g-4">
+                    <section class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Basic Table</h2>
+                                <p>
+                                    Use
+                                    <code>.table</code>
+                                    on the table element.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive" tabindex="0" role="region" aria-label="Basic Table">
+                                    <table class="table">
+                                        <caption class="visually-hidden">Basic Table example</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Inverse Table</h2>
+                                <p>
+                                    Use
+                                    <code>.table-dark</code>
+                                    for an inverse table.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive" tabindex="0" role="region" aria-label="Inverse Table">
+                                    <table class="table table-dark">
+                                        <caption class="visually-hidden">Inverse Table example</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Hover Table</h2>
+                                <p>
+                                    Use
+                                    <code>.table-hover</code>
+                                    to highlight a row on hover.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive" tabindex="0" role="region" aria-label="Hover Table">
+                                    <table class="table table-hover">
+                                        <caption class="visually-hidden">Hover Table example</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Dark Table</h2>
+                                <p>
+                                    Combine
+                                    <code>.table-dark</code>
+                                    and
+                                    <code>.table-striped</code>
+                                    .
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive" tabindex="0" role="region" aria-label="Dark Table">
+                                    <table class="table table-dark table-striped">
+                                        <caption class="visually-hidden">Dark Table example</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Striped Table</h2>
+                                <p>
+                                    Use
+                                    <code>.table-striped</code>
+                                    for alternating row colors.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive" tabindex="0" role="region" aria-label="Striped Table">
+                                    <table class="table table-striped">
+                                        <caption class="visually-hidden">Striped Table example</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Contextual Classes</h2>
+                                <p>
+                                    Use classes such as
+                                    <code>.table-success</code>
+                                    on a row or cell.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive" tabindex="0" role="region" aria-label="Contextual classes">
+                                    <table class="table">
+                                        <caption class="visually-hidden">Contextual classes example</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr class="table-primary">
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr class="table-secondary">
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-success">
+                                                <th scope="row">4</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-danger">
+                                                <th scope="row">5</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-warning">
+                                                <th scope="row">6</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-info">
+                                                <th scope="row">7</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-light">
+                                                <th scope="row">8</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-dark">
+                                                <th scope="row">9</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Background Utilities</h2>
+                                <p>Bootstrap table variants provide different background colors for each row.</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive" tabindex="0" role="region" aria-label="Background utilities">
+                                    <table class="table">
+                                        <caption class="visually-hidden">Background utilities example</caption>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr class="table-primary">
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr class="table-secondary">
+                                                <th scope="row">3</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-success">
+                                                <th scope="row">4</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-danger">
+                                                <th scope="row">5</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-warning">
+                                                <th scope="row">6</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-info">
+                                                <th scope="row">7</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-light">
+                                                <th scope="row">8</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                            <tr class="table-dark">
+                                                <th scope="row">9</th>
+                                                <td>Larry</td>
+                                                <td>the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <footer class="page-footer">DashboardKit · HTML, CSS &amp; Bootstrap practice</footer>
+            </div>
+        </main>
+    </body>
+</html>
